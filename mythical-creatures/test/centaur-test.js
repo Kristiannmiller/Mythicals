@@ -7,7 +7,7 @@ describe('Centaur', function() {
     assert.isFunction(Centaur);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var centaur1 = new Centaur({ name: 'Georgiana' });
     var centaur2 = new Centaur({ name: 'Bob' });
 
