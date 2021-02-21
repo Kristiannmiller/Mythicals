@@ -4,6 +4,7 @@ class Centaur {
     this.breed = data.type
     this.cranky = false
     this.standing = true
+    this.layingDown = false
     this.actionCount = 0
   }
   increaseAction() {
@@ -22,6 +23,14 @@ class Centaur {
   }
   sleep() {
     return this.standing ? 'NO!' : 'zzzzz'
+  }
+  layDown() {
+    this.standing = false
+    this.layingDown = true
+  }
+  standUp() {
+    this.standing = true
+    this.layingDown = false
   }
 }
 
