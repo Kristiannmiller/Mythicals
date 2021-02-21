@@ -123,7 +123,7 @@ describe('Centaur', function() {
     assert.equal(centaur.run(), 'NO!');
   });
 
-  it.skip('should be able to sleep when laying down', function() {
+  it('should be able to sleep when laying down', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.layDown();
