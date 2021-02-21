@@ -15,7 +15,7 @@ describe('Centaur', function() {
     assert.equal(centaur2.name, 'Bob');
   });
 
-  it.skip('should have a breed', function() {
+  it('should have a breed', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.breed, 'Palomino');
