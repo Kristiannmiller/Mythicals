@@ -27,7 +27,7 @@ describe('Centaur', function() {
     assert.equal(centaur.shoot(), 'Twang!!!');
   });
 
-  it.skip('should have a horse sound when it runs', function() {
+  it('should have a horse sound when it runs', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     var soundEffect = centaur.run();
