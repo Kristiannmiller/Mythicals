@@ -151,7 +151,7 @@ describe('Centaur', function() {
     assert.equal(centaur.shoot(),'Twang!!!');
   });
 
-  it.skip('should not be cranky after drinking potion', function() {
+  it('should not be cranky after drinking potion', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.shoot();
