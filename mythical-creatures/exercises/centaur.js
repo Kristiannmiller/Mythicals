@@ -22,7 +22,13 @@ class Centaur {
     return this.cranky || this.layingDown ? 'NO!' : 'Clop clop clop clop!!!'
   }
   sleep() {
-    return this.standing ? 'NO!' : 'ZZZZ'
+    if(this.standing) {
+      return 'NO!'
+    } else {
+      this.cranky = false
+      this.actionCount = 0
+      return 'ZZZZ'
+    }
   }
   layDown() {
     this.standing = false
