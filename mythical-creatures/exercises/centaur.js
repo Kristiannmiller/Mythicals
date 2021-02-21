@@ -20,6 +20,9 @@ class Centaur {
     this.increaseAction()
     return this.cranky ? 'NO!' : 'Clop clop clop clop!!!'
   }
+  sleep() {
+    return this.standing ? 'NO!' : 'zzzzz'
+  }
 }
 
 module.exports = Centaur;
