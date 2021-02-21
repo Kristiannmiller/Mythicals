@@ -14,11 +14,11 @@ class Centaur {
   }
   shoot() {
     this.increaseAction()
-    return 'Twang!!!'
+    return this.cranky ? 'NO!' : 'Twang!!!'
   }
   run() {
     this.increaseAction()
-    return 'Clop clop clop clop!!!'
+    return this.cranky ? 'NO!' : 'Clop clop clop clop!!!'
   }
 }
 
