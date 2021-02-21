@@ -42,7 +42,7 @@ class Centaur {
     if(this.layingDown){
       return 'Not while I\'m laying down!'
     } else {
-      this.cranky = false
+      this.cranky ? this.cranky = false : this.cranky = true
     }
   }
 }
