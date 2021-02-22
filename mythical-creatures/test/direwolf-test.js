@@ -4,7 +4,7 @@ const Stark = require('../exercises/stark');
 
 describe('Direwolf', () => {
 
-  it.skip('should be a function', () => {
+  it('should be a function', () => {
     assert.isFunction(Direwolf);
   });
 
