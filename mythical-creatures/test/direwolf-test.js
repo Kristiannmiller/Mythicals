@@ -57,7 +57,7 @@ describe('Direwolf', () => {
     assert.equal(stark.name, 'Bran');
   });
 
-  it.skip('should have a default home of Winterfell', () => {
+  it('should have a default home of Winterfell', () => {
     const stark = new Stark('Bran');
 
     assert.equal(stark.name, 'Bran');
