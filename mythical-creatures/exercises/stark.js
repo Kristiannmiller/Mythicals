@@ -5,7 +5,10 @@ class Stark {
     this.safe = false
   }
   houseWords() {
-    return 'Winter is Coming'
+    return this.safe ? 'The North Remembers' : 'Winter is Coming'
+  }
+  changeSafeStatus() {
+    this.safe = !this.safe
   }
 }
 
