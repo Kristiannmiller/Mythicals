@@ -150,7 +150,7 @@ describe('Direwolf', () => {
     assert.equal(direwolf.huntsWhiteWalkers, false);
   });
 
-  it.skip('should be able to stop protecting Starks', () => {
+  it('should be able to stop protecting Starks', () => {
     const direwolf1 = new Direwolf('Summer', 'Winterfell');
     const direwolf2 = new Direwolf('Lady', 'Winterfell');
     const stark1 = new Stark('Sansa');
