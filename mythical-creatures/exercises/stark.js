@@ -1,5 +1,6 @@
 class Stark {
-  constructor() {
+  constructor(name) {
+    this.name = name
   }
 }
 
