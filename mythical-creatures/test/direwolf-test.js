@@ -8,12 +8,12 @@ describe('Direwolf', () => {
     assert.isFunction(Direwolf);
   });
 
-  it.skip('should instantiate our good friend, Direwolf', () => {
+  it('should instantiate our good friend, Direwolf', () => {
     const direwolf = new Direwolf();
     assert.isObject(direwolf);
   });
 
-  it.skip('should have a name', () => {
+  it('should have a name', () => {
     const direwolf = new Direwolf('Nymeria');
     assert.equal(direwolf.name, 'Nymeria');
   });
