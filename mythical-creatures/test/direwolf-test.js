@@ -73,7 +73,7 @@ describe('Direwolf', () => {
     assert.equal(stark.location, 'Winterfell');
   });
 
-  it.skip('should be able to protect a Stark', () => {
+  it('should be able to protect a Stark', () => {
     const direwolf = new Direwolf('Nymeria', 'Riverlands');
     const stark = new Stark('Arya', 'Riverlands');
 

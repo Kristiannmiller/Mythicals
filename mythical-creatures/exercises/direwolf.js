@@ -5,6 +5,9 @@ class Direwolf {
     this.size = size || 'Massive'
     this.starksToProtect = []
   }
+  protect(stark) {
+    this.starksToProtect.push(stark)
+  }
 }
 
 module.exports = Direwolf;
