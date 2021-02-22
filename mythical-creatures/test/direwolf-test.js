@@ -140,7 +140,7 @@ describe('Direwolf', () => {
     assert.equal(stark2.houseWords(), 'Winter is Coming');
   });
 
-  it.skip('should hunt white walkers when not protecting Starks', () => {
+  it('should hunt white walkers when not protecting Starks', () => {
     const direwolf = new Direwolf('Nymeria', 'Winterfell');
     const stark = new Stark('Sansa');
 
