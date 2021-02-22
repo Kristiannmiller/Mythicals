@@ -117,7 +117,7 @@ describe('Direwolf', () => {
     assert.equal(direwolf2.starksToProtect[1].name, 'Bran');
   });
 
-  it.skip('Stark should start off unsafe', () => {
+  it('Stark should start off unsafe', () => {
     const stark = new Stark('John', 'Winterfell');
 
     assert.equal(stark.safe, false);
