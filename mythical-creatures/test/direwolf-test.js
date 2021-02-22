@@ -37,7 +37,7 @@ describe('Direwolf', () => {
     assert.equal(direwolf.size, 'Massive');
   });
 
-  it.skip('should be able to have another size', () => {
+  it('should be able to have another size', () => {
     const direwolf = new Direwolf('Shaggydog', 'Karhold', 'Smol Pupper');
 
     assert.equal(direwolf.name, 'Shaggydog');
