@@ -18,7 +18,7 @@ describe('Direwolf', () => {
     assert.equal(direwolf.name, 'Nymeria');
   });
 
-  it.skip('should have a default home of Beyond the Wall', () => {
+  it('should have a default home of Beyond the Wall', () => {
     const direwolf = new Direwolf('Lady');
 
     assert.equal(direwolf.name, 'Lady');
