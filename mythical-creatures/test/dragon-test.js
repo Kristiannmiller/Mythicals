@@ -28,7 +28,7 @@ describe('Dragon', function() {
     assert.equal(dragon.rider, 'Eragon');
   });
 
-  it.skip('should have a color', function() {
+  it('should have a color', function() {
     var dragon = new Dragon('Saphira', 'Eragon', 'blue');
 
     assert.equal(dragon.color, 'blue');
