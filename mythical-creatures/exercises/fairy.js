@@ -14,5 +14,8 @@ class Fairy {
   makeDresses(flowers) {
     flowers.forEach(flower => this.clothes.dresses.push(flower))
   }
+  provoke() {
+    this.disposition = 'Vengeful'
+  }
 }
 module.exports = Fairy
