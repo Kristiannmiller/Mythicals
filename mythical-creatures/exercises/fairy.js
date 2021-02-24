@@ -10,5 +10,8 @@ class Fairy {
   believe() {
     this.dust += 10
   }
+  makeDresses(flowers) {
+    flowers.forEach(flower => this.clothes.dresses.push(flower))
+  }
 }
 module.exports = Fairy
