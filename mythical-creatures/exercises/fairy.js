@@ -21,9 +21,15 @@ class Fairy {
   replaceInfant(infant) {
     if(this.disposition === 'Vengeful') {
       this.humanWards.push(infant)
+      this.determineCalm()
       infant.disposition = 'Malicious'
     }
     return infant
+  }
+  determineCalm() {
+    if(this.humanWards.length % 3 === 0) {
+      this.disposition = 'Good natured'
+    }
   }
 }
 module.exports = Fairy
