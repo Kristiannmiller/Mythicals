@@ -6,7 +6,7 @@ describe('Fairy', () => {
     assert.isFunction(Fairy);
   });
 
-  it.skip('should instantiate a fairy', () => {
+  it('should instantiate a fairy', () => {
     const fairy = new Fairy();
 
     assert.isObject(fairy);
@@ -29,7 +29,7 @@ describe('Fairy', () => {
     const dustBefore = fairy.dust;
 
     fairy.receiveBelief();
-    
+
     const dustAfter = fairy.dust;
     const difference = dustAfter - dustBefore;
     assert.equal(difference, 1);
@@ -87,7 +87,7 @@ describe('Fairy', () => {
     const fairy = new Fairy('Claudine');
     const firstInfant = { name: 'Sue', eyes: 'Blue', disposition: 'Sweet'};
     const secondInfant = { name: 'Henry', eyes: 'Brown', disposition: 'Charming'};
-    
+
     fairy.provoke();
     fairy.replaceInfant(firstInfant);
     fairy.replaceInfant(secondInfant);
