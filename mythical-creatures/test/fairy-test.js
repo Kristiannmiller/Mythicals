@@ -12,7 +12,7 @@ describe('Fairy', () => {
     assert.isObject(fairy);
   });
 
-  it.skip('should have a name', () => {
+  it('should have a name', () => {
     const fairy = new Fairy('Holly');
 
     assert.equal(fairy.name, 'Holly');
