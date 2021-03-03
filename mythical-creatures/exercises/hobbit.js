@@ -1,6 +1,6 @@
 class Hobbit {
-  constructor() {
-
+  constructor(name) {
+    this.name = name
   }
 }
 module.exports = Hobbit

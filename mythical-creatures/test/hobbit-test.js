@@ -13,7 +13,7 @@ describe('Hobbit', function() {
     assert.instanceOf(hobbit, Hobbit);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var bilbo = new Hobbit('Bilbo');
 
     assert.equal(bilbo.name, 'Bilbo');
