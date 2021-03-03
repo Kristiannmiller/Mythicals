@@ -4,6 +4,7 @@ class Hobbit {
     this.age = 0
     this.adult = false
     this.old = false
+    this.hasRing = name === 'Frodo' ? true : false
   }
   celebrateBirthday() {
     this.age++
