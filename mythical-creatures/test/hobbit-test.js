@@ -3,11 +3,11 @@ var Hobbit = require('../exercises/hobbit');
 
 describe('Hobbit', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Hobbit);
   });
 
-  it.skip('should instantiate our good friend, Hobbit', function() {
+  it('should instantiate our good friend, Hobbit', function() {
     var hobbit = new Hobbit();
 
     assert.instanceOf(hobbit, Hobbit);
@@ -15,10 +15,10 @@ describe('Hobbit', function() {
 
   it.skip('should have a name', function() {
     var bilbo = new Hobbit('Bilbo');
-    
+
     assert.equal(bilbo.name, 'Bilbo');
   });
-  
+
   it.skip('should be able to have a different name', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in your name as an argument)
 
