@@ -47,7 +47,7 @@ describe('Hobbit', function() {
     };
   };
 
-  it.skip('should be considered a child at the age of 32', function() {
+  it('should be considered a child at the age of 32', function() {
     var hobbit = new Hobbit('Taylor');
 
     timeTravel(32, hobbit);
