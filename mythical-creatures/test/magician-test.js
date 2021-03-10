@@ -28,7 +28,7 @@ describe('Magician', function() {
     assert.equal(magician.topHat, false)
   });
 
-  it.skip('should be able to cast a spell', function() {
+  it('should be able to cast a spell', function() {
     var magician = new Magician({ name: 'Scott', topHat: false });
 
     var spell = magician.incantation('abracadabra');
