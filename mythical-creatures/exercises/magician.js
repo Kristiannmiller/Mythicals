@@ -1,7 +1,7 @@
 class Magician {
-  constructor(data) {
-    this.name = data ? data.name : undefined
-    this.topHat = true
+  constructor({name, topHat = true}) {
+    this.name = name
+    this.topHat = topHat
 
   }
 }
