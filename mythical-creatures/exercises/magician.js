@@ -1,5 +1,5 @@
 class Magician {
-  constructor({name, topHat = true}) {
+  constructor({name = "Bob", topHat = true}) {
     this.name = name
     this.topHat = topHat
   }
