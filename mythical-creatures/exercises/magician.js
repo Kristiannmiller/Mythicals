@@ -2,6 +2,7 @@ class Magician {
   constructor({name = "Bob", topHat = true}) {
     this.name = name
     this.topHat = topHat
+    this.confident = false
   }
   incantation(phrase) {
     return `${phrase.toUpperCase()}!`
