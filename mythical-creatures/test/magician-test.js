@@ -70,7 +70,7 @@ describe('Magician', function() {
     assert.equal(magician.confident, true);
   });
 
-  it.skip('should not be able to saw someone in half unless they\'re confident', function() {
+  it('should not be able to saw someone in half unless they\'re confident', function() {
     var magician = new Magician({ name: 'Scott', topHat: false });
 
     assert.equal(magician.performShowStopper(), 'Oh no! Practice more before attempting this trick!');
