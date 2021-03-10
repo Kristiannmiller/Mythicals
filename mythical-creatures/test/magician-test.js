@@ -38,7 +38,7 @@ describe('Magician', function() {
     assert.equal(charm, 'ALLAKAZAAM!');
   });
 
-  it.skip('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
+  it('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
     var magician = new Magician({ name: 'Casey' });
 
     var spell = magician.cast();
@@ -46,7 +46,7 @@ describe('Magician', function() {
     assert.equal(spell, 'PULL RABBIT FROM TOP HAT');
   });
 
-  it.skip('should be able to pull a dove from the sleeve, if the magician does not have a top hat', function() {
+  it('should be able to pull a dove from the sleeve, if the magician does not have a top hat', function() {
     var magician = new Magician({ name: 'Leta', topHat: false });
 
     var spell = magician.cast();

@@ -6,5 +6,8 @@ class Magician {
   incantation(phrase) {
     return `${phrase.toUpperCase()}!`
   }
+  cast() {
+    return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE'
+  }
 }
 module.exports = Magician
