@@ -1,5 +1,6 @@
 class Magician {
-  constructor() {
+  constructor(data) {
+    this.name = data ? data.name : undefined
 
   }
 }
