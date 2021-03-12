@@ -14,12 +14,12 @@ describe('Medusa', function() {
     assert.instanceOf(medusa, Medusa);
   });
 
-  it.skip('should have a name', function() {
-    // instantiate a Medusa object with your name as an argument
-    // instantiate another Medusa object with someone else's name as an argument
+  it('should have a name', function() {
+    var medusa1 = new Medusa("Kristi");
+    var medusa2 = new Medusa("Taylor");
 
-    // assert that the first medusa's name is your name
-    // assert that the second medusa's name is the other name
+    assert.equal(medusa1.name, "Kristi");
+    assert.equal(medusa2.name, "Taylor");
   });
 
   it.skip('should start with no statues', function() {
