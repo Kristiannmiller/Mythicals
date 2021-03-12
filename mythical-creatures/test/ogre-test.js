@@ -78,7 +78,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('ogre swings the club when a human notices it', () => {
+  it('ogre swings the club when a human notices it', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
