@@ -12,5 +12,8 @@ class Ogre {
     this.swings++
     if(this.swings % 2 === 0) human.knockedOut = true
   }
+  apologize(human) {
+    human.knockedOut = false
+  }
 }
 module.exports = Ogre

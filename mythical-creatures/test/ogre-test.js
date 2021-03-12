@@ -108,7 +108,7 @@ describe('Ogre', () => {
     assert.equal(human.knockedOut, true);
   });
 
-  it.skip('human wakes up when ogre apologizes', () => {
+  it('human wakes up when ogre apologizes', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
