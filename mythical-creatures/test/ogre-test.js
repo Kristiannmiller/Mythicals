@@ -4,11 +4,11 @@ const Human = require('../exercises/human');
 
 describe('Ogre', () => {
 
-  it.skip('should be a function', () => {
+  it('should be a function', () => {
     assert.isFunction(Ogre);
   });
 
-  it.skip('should instantiate our good friend, Ogre', () => {
+  it('should instantiate our good friend, Ogre', () => {
     const ogre = new Ogre();
     assert.isObject(ogre);
   });
