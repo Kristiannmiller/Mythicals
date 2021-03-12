@@ -10,6 +10,7 @@ class Ogre {
   }
   swingAt(human) {
     this.swings++
+    if(this.swings % 2 === 0) human.knockedOut = true
   }
 }
 module.exports = Ogre
