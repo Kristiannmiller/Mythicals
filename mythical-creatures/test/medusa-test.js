@@ -96,11 +96,11 @@ describe('Person', function() {
     assert.instanceOf(person, Person);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var scott = new Person('Scott');
     var eric = new Person('Eric');
 
-    assert.equal(scott.name, 'Steve');
+    assert.equal(scott.name, 'Scott');
     assert.equal(eric.name, 'Eric');
   });
 
