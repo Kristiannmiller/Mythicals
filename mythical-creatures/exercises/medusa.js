@@ -5,7 +5,7 @@ class Medusa {
   }
   stare(victim) {
     victim.stoned = true
-    this.statues.push(victim)
+    if(this.statues.length < 3) this.statues.push(victim)
   }
 }
 module.exports = Medusa
