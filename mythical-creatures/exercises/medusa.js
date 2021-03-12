@@ -5,6 +5,7 @@ class Medusa {
   }
   stare(victim) {
     victim.stoned = true
+    this.statues.push(victim)
   }
 }
 module.exports = Medusa
