@@ -90,7 +90,7 @@ describe('Medusa', function() {
 
 describe('Person', function() {
 
-  it.skip('should instantiate our good friend, Person', function() {
+  it('should instantiate our good friend, Person', function() {
     var person = new Person();
 
     assert.instanceOf(person, Person);
