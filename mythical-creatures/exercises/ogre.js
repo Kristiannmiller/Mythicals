@@ -1,6 +1,6 @@
 class Ogre {
-  constructor() {
-
+  constructor(name) {
+    this.name = name
   }
 }
 module.exports = Ogre
