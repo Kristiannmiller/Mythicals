@@ -4,11 +4,11 @@ var Person = require('../exercises/person');
 
 describe('Medusa', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Medusa);
   });
 
-  it.skip('should instantiate our good friend, Medusa', function() {
+  it('should instantiate our good friend, Medusa', function() {
     var medusa = new Medusa();
 
     assert.instanceOf(medusa, Medusa);
@@ -82,7 +82,7 @@ describe('Medusa', function() {
     medusa.stare(victim4);
 
     assert.equal(medusa.statues.length, 3);
-    assert.deepEqual(medusa.statues, [victim2, victim3, victim4]);  
+    assert.deepEqual(medusa.statues, [victim2, victim3, victim4]);
     assert.equal(victim4.stoned, true);
     assert.equal(victim1.stoned, false);
   });
