@@ -50,7 +50,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it.skip('human notices ogre on the sixth encounter', () => {
+  it('human notices ogre on the sixth encounter', () => {
     const ogre = new Ogre('Brak');
     const human = new Human('Jane');
 
