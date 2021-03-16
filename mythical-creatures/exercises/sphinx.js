@@ -1,6 +1,6 @@
 class Sphinx {
-  constructor() {
-    
+  constructor(name) {
+    this.name = name || null
   }
 }
-module.exports = Spinx
+module.exports = Sphinx

@@ -6,7 +6,7 @@ describe('Sphinx', () => {
     assert.isFunction(Sphinx);
   });
 
-  it.skip('should have no name', () => {
+  it('should have no name', () => {
     const sphinx = new Sphinx();
 
     assert.equal(sphinx.name, null);
