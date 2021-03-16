@@ -9,5 +9,9 @@ class Sphinx {
     }
     this.riddles.push(riddle)
   }
+  attemptAnswer(guess) {
+    let result = this.riddles.filter(riddle => riddle.answer !== guess)
+    this.riddles = result
+  }
 }
 module.exports = Sphinx
