@@ -14,7 +14,9 @@ class Sphinx {
     let result = this.riddles.filter(riddle => riddle.answer !== guess)
     if(result.length < this.riddles.length) {
       this.riddles = result
-      return 'That wasn\'t that hard, I bet you don\'t get the next one'
+      return this.riddles.length === 0 ?
+      `PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS "${guess}"???` :
+      'That wasn\'t that hard, I bet you don\'t get the next one'
     } else {
       this.heroesEaten++
     }
