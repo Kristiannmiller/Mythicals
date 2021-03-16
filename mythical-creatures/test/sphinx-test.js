@@ -12,7 +12,7 @@ describe('Sphinx', () => {
     assert.equal(sphinx.name, null);
   });
 
-  it.skip('should start with no riddles', () => {
+  it('should start with no riddles', () => {
     const sphinx = new Sphinx();
 
     assert.deepEqual(sphinx.riddles, []);
