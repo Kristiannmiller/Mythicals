@@ -15,6 +15,8 @@ class Sphinx {
     if(result.length < this.riddles.length) {
       this.riddles = result
       return 'That wasn\'t that hard, I bet you don\'t get the next one'
+    } else {
+      this.heroesEaten++
     }
   }
 }
