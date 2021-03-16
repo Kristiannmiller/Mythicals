@@ -11,7 +11,10 @@ class Sphinx {
   }
   attemptAnswer(guess) {
     let result = this.riddles.filter(riddle => riddle.answer !== guess)
-    this.riddles = result
+    if(result.length < this.riddles.length) {
+      this.riddles = result
+      return 'That wasn\'t that hard, I bet you don\'t get the next one'
+    }
   }
 }
 module.exports = Sphinx
