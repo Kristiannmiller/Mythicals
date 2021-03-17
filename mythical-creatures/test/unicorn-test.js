@@ -13,22 +13,22 @@ describe('Unicorn', function() {
     assert.instanceOf(unicorn, Unicorn);
   });
 
-  it('should have a name', function() {
+  it.skip('should have a name', function() {
     var unicorn = new Unicorn('Bree');
 
     assert.equal(unicorn.name, 'Bree');
   });
 
-  it('should be able to have a different name', function() {
+  it.skip('should be able to have a different name', function() {
     var unicorn = new Unicorn('Pam');
                 //constructor('Pam');
 
     assert.equal(unicorn.name, 'Pam');
   });
 
-  it('should have a color', function() {
+  it.skip('should have a color', function() {
     var unicorn = new Unicorn('TayTay', 'blue');
-    
+
     assert.equal(unicorn.color, 'blue');
   });
 
@@ -46,7 +46,7 @@ describe('Unicorn', function() {
 
   it.skip('should say sparklying stuff', function() {
     var unicorn = new Unicorn('Brenna');
-    
+
     assert.equal(unicorn.says('Wonderful!'), '**;* Wonderful! *;**');
     assert.equal(unicorn.says('Batman has a great smile'), '**;* Batman has a great smile *;**');
   });
