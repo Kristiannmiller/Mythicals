@@ -1,6 +1,6 @@
 class Unicorn {
-  constructor() {
-
+  constructor(name) {
+    this.name = name
   }
 }
 
