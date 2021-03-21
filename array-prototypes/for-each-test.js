@@ -10,6 +10,8 @@ describe('For Each', function () {
       'Yellow'
     ];
 
+    favoriteColors.forEach((color, i) => favoriteColors[i] = color.toUpperCase())
+
     assert.deepEqual(favoriteColors, ['RED', 'GREEN', 'BLUE', 'YELLOW']);
   });
 });
