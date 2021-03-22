@@ -9,7 +9,7 @@ describe('iteratorFactory', function() {
     assert.equal(typeof factory, "object");
   });
 
-  it.skip('has a prototype function called `sum`', function() {
+  it('has a prototype function called `sum`', function() {
     var factory = new iteratorFactory();
 
     assert.equal(typeof factory.sum, 'function');
