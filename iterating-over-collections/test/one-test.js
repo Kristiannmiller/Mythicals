@@ -31,7 +31,7 @@ describe('iteratorFactory', function() {
     assert.equal(factory.sum(["hey, ", "what's ", "up", "?"]), "hey, what's up?");
   });
 
-  it.skip('can sum a collection of integers and then square the sum', function() {
+  it('can sum a collection of integers and then square the sum', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sumAndSquare([1, 2, 3, 4, 5]), 225);
