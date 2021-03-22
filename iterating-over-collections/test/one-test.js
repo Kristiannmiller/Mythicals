@@ -39,12 +39,12 @@ describe('iteratorFactory', function() {
     assert.equal(factory.sumAndSquare([10, 11, 12, 13, 14]), 3600);
   })
 
-  it.skip('can filter out odd numbers from a collection of integers', function() {
+  it('can filter out odd numbers from a collection of integers', function() {
     var factory = new iteratorFactory();
 
-    assert.equal(factory.onlyEvens([1, 2, 3, 4, 5, 6]), [2, 4, 6]);
+    assert.deepEqual(factory.onlyEvens([1, 2, 3, 4, 5, 6]), [2, 4, 6]);
 
-    assert.equal(factory.onlyEvens([7, 8, 9, 10, 11, 12]), [8, 10, 12]);
+    assert.deepEqual(factory.onlyEvens([7, 8, 9, 10, 11, 12]), [8, 10, 12]);
   });
 
   it.skip('can filter out even numbers from a collection of integers', function() {

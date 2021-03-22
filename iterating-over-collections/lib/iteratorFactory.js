@@ -20,4 +20,10 @@ iteratorFactory.prototype.sumAndSquare = (collection) => {
   return sum * sum
 }
 
+iteratorFactory.prototype.onlyEvens = (collection) => {
+  return collection.filter(num => num % 2 === 0)
+}
+
+
+
 module.exports = iteratorFactory;
