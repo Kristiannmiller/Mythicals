@@ -15,7 +15,7 @@ describe('iteratorFactory', function() {
     assert.equal(typeof factory.sum, 'function');
   });
 
-  it.skip('can sum a collection of integers', function() {
+  it('can sum a collection of integers', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sum([1, 2, 3, 4, 5]), 15);
