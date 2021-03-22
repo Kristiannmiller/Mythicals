@@ -24,6 +24,10 @@ iteratorFactory.prototype.onlyEvens = (collection) => {
   return collection.filter(num => num % 2 === 0)
 }
 
+iteratorFactory.prototype.onlyOdds = (collection) => {
+  return collection.filter(num => num % 2 !== 0)
+}
+
 
 
 module.exports = iteratorFactory;

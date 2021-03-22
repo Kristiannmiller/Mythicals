@@ -47,12 +47,12 @@ describe('iteratorFactory', function() {
     assert.deepEqual(factory.onlyEvens([7, 8, 9, 10, 11, 12]), [8, 10, 12]);
   });
 
-  it.skip('can filter out even numbers from a collection of integers', function() {
+  it('can filter out even numbers from a collection of integers', function() {
     var factory = new iteratorFactory();
 
-    assert.equal(factory.onlyOdds([1, 2, 3, 4, 5, 6]), [1, 3, 5]);
+    assert.deepEqual(factory.onlyOdds([1, 2, 3, 4, 5, 6]), [1, 3, 5]);
 
-    assert.equal(factory.onlyOdds([7, 8, 9, 10, 11, 12]), [7, 9, 11]);
+    assert.deepEqual(factory.onlyOdds([7, 8, 9, 10, 11, 12]), [7, 9, 11]);
   });
 
   it.skip('can square every number in a collection and then summing them', function() {
