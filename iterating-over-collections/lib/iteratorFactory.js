@@ -28,6 +28,13 @@ iteratorFactory.prototype.onlyOdds = (collection) => {
   return collection.filter(num => num % 2 !== 0)
 }
 
+iteratorFactory.prototype.squareAndSum = (collection) => {
+  return collection.reduce((acc, curr) => {
+    acc += (curr * curr)
+    return acc
+  }, 0)
+}
+
 
 
 module.exports = iteratorFactory;

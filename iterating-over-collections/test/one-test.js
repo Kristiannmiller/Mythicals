@@ -55,7 +55,7 @@ describe('iteratorFactory', function() {
     assert.deepEqual(factory.onlyOdds([7, 8, 9, 10, 11, 12]), [7, 9, 11]);
   });
 
-  it.skip('can square every number in a collection and then summing them', function() {
+  it('can square every number in a collection and then summing them', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.squareAndSum([1, 2, 3, 4, 5, 6]), 91);
