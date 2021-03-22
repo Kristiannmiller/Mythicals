@@ -23,7 +23,7 @@ describe('iteratorFactory', function() {
     assert.equal(factory.sum([10, 20, 30, 40, 50]), 150);
   });
 
-  it.skip('can sum a collection of strings', function() {
+  it('can sum a collection of strings', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sum(["one, ", "two, ", "three"]), "one, two, three");
